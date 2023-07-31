@@ -239,9 +239,6 @@ resource "aws_security_group_rule" "https_access" {
 
 
 #Create web server(s) security group
-#https://cloudcasts.io/course/terraform/security-groups
-#we wont declare the sg rules inline in this alternate format
-#https://dev.to/aws-builders/how-to-terraform-multiple-security-group-with-varying-configuration-1638
 
 resource "aws_security_group" "db_sg" {
   #  name = "cloudcasts-${var.infra_env}-public-sg"
@@ -260,8 +257,6 @@ resource "aws_security_group" "db_sg" {
 
 }
 
-#  Name = "cloudcasts-${var.infra_env}-public-sg"
-#  Environment = var.infra_env
 
 #allow mysql traffic from web server SG
 #https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule
