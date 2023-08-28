@@ -12,8 +12,6 @@ terraform {
 
 provider "aws" {
   region     = var.region
-  access_key = "XXXXX"
-  secret_key = "XXXXXX"
 }
 
 #looking up secrets manager creds
