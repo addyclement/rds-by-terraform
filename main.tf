@@ -325,7 +325,7 @@ resource "aws_db_instance" "rds-pry-instance" {
   password                              = local.db_creds.password
   parameter_group_name                  = aws_db_parameter_group.shoppingdb-mysql8-pg.name
   performance_insights_enabled          = true
-  performance_insights_retention_period = 31
+  performance_insights_retention_period = 10
   multi_az                              = true
   publicly_accessible                   = false
   skip_final_snapshot                   = true
